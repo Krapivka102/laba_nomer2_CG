@@ -50,7 +50,7 @@ int main(int argc, char** argv)
     glutCreateWindow("Tutorial 01");
 
     glutDisplayFunc(RenderSceneCB);
-
+    glutIdleFunc(RenderSceneCB);
 
     GLenum res = glewInit();
     if (res != GLEW_OK)
